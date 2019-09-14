@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+#include<stdio.h>
+#include<string>
+using namespace std;
+
+int main()
+{
+    int t,len=0;
+    char str[100];
+     scanf("%d",&t);
+
+     while(t--)
+     {
+         len=0;
+         gets(str);
+            printf("I am Toorg!\n");
+str[0]='\0';
+     }
+    return 0;
+}
