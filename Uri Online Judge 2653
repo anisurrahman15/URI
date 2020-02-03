@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main ()
+{
+    int t,a,b,c,kase=1;
+    long long ans;
+    string str;
+    cin>>t;
+    while(t--)
+    {
+        ans=0;
+        cin>>str;
+        cin>>a>>b>>c;
+        if (str=="min")
+        {
+            int tem=min(a,b);
+            ans=min(tem,c);
+        }
+        else if (str=="mean")
+        {
+            ans=(a+b+c)/3;
+        }
+        else if (str=="eye")
+        {
+            ans=((a*30)+(b*59)+(c*11))/100;
+        }
+        else if (str=="max")
+        {
+            int tem=max(a,b);
+            ans=max(tem,c);
+        }
+        cout<<"Caso #"<<kase<<": "<<ans<<endl;
+kase++;
+    }
+
+
+    return 0;
+}
